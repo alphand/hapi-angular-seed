@@ -1,0 +1,32 @@
+{
+  "name": "vidmarket",
+  "version": "0.0.1-alpha",
+  "description": "Video Marketing Marketplace",
+  "main": "main.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Niko Darmawan",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "good": "^2.0.0",
+    "tiny-lr": "0.0.5",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "^0.4.4",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-coffee": "^0.10.1",
+    "matchdep": "^0.3.0",
+    "grunt-contrib-jade": "^0.11.0",
+    "grunt-contrib-uglify": "^0.4.0"
+  },
+  "dependencies": {
+    "hapi": "^4.0.0",
+    "require-directory": "^1.2.0",
+    "q": "^1.0.1",
+    "coffee-script": "^1.7.1",
+    "gulp-coffee": "^1.4.2"
+  }
+}

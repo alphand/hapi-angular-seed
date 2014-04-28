@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="VidMarketApp">
+  <head>
+    <meta charset="UTF-8" > 
+    
+    <title>{% block title %}{% endblock %}</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/public/css/main.css" />
+  
+  </head>
+  <body class="ng-cloak" >
+    <div class="main-root">
+      {% include "./_header.html" %}
+
+      <div class="container">
+        {% block content %}
+        {% endblock %}
+      </div>
+      <div class="root-footer"></div>
+    </div>
+
+    {% include "./_footer.html" %}
+
+    <script type="text/javascript" src="/public/scripts/libraries.js"></script>
+    <script type="text/javascript" src="/public/scripts/vidapp/vidapp.js"></script>
+  </body>  
+</html>
+

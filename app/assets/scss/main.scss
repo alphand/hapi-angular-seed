@@ -1,0 +1,18 @@
+@import "../../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import "animate";
+@import "compass/layout/sticky-footer";
+
+
+@include sticky-footer(30px,'.main-root','.root-footer','.vid-footer');
+.vid-footer{
+  text-align:center;
+  color:#999;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak{
+  @include opacity(0);
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
