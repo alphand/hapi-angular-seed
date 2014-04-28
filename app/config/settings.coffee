@@ -7,6 +7,6 @@ settings =
       views:
         path:"./app/views"
         engines:
-          html: 'swig'
+          html: 'jade'
 
 module.exports = exports = settings

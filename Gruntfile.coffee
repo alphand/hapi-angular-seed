@@ -93,7 +93,7 @@ module.exports = exports = (grunt) ->
         options:
           livereload:true
       homefile:
-        files: ["./client-app/src/*.jade"]
+        files: ["./client-app/src/**/*.jade"]
         tasks:["jade:server","hapi-restart"]
         options:
           livereload:true
