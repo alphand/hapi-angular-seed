@@ -7,7 +7,7 @@ class PPPlugins
     goodOpts =
       subscribers:
         'console': ['ops','request','log','error']
-        'tmp/logs/':['ops','request','log','error']
+        '.tmp/logs/':['ops','request','log','error']
 
     @server.pack.require('good',goodOpts,(err)->
       console.log "Failed loading GOOD plugins" if err?

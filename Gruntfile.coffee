@@ -111,4 +111,4 @@ module.exports = exports = (grunt) ->
 
   grunt.registerTask 'build-ngapp',['clean:prescript','coffee:ngapp','ngmin:ngapp','uglify:webapp','jade:webapp', 'clean:prescript']
   grunt.registerTask 'build-assets', ['clean:compiled','compass:dev','uglify:lib']
-  grunt.registerTask 'default', ['jade:server','hapi-start','watch']
+  grunt.registerTask 'default', ['build-assets','build-ngapp','jade:server','hapi-start','watch']
