@@ -1,5 +1,5 @@
 {
-  "name": "hapi-reel",
+  "name": "pp-social-accounts",
   "version": "0.0.0-alpha",
   "authors": [
     "Niko Darmawan <darmawan.niko@gmail.com>"
@@ -17,6 +17,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.1+2"
+    "bootstrap-sass-official": "~3.1.1",
+    "jquery": "~2.1.0",
+    "jquery-ui": "~1.10.4",
+    "angular": "~1.2.16",
+    "angular-route": "~1.2.16"
   }
 }

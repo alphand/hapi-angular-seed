@@ -2,6 +2,10 @@
 node_modules
 bower_components
 tmp
+
 public/*
+
 .sass-cache
-client-app/dist/
+.tmp
+
+pages/dist

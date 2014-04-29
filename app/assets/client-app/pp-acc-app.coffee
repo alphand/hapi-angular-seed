@@ -1,2 +1,4 @@
-angular.module('pp-acc-app',[])
+__ngappname = "pp-acc-app"
+angular.module(__ngappname,['ngRoute'])
+angular.module(__ngappname).constant('viewPath',"/public/scripts/app/views")
 

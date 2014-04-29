@@ -1,0 +1,95 @@
+@import "compass/css3";
+
+@mixin animation-name($val){
+  -webkit-animation-name:$val;
+  -moz-animation-name:$val;
+  -ms-animation-name:$val;
+  -o-animation-name:$val;
+  animation-name:$val;
+}
+@mixin animation-fill-mode($val){
+  -webkit-animation-fill-mode: $val;
+  -moz-animation-fill-mode: $val;
+  -ms-animation-fill-mode: $val;
+  animation-fill-mode: $val;
+}
+
+@mixin animation-duration($val){
+  -webkit-animation-duration:$val;
+  -moz-animation-duration:$val;
+  -ms-animation-duration:$val;
+  animation-duration:$val;
+}
+
+@mixin translateY($val){
+  -webkit-transform:translateY($val);
+  -moz-transform:translateY($val);
+  -ms-transform:translateY($val);
+  -o-transform:translateY($val);
+  transform:translateY($val);
+}
+
+@mixin keyframes($name){
+  @-webkit-keyframes #{$name}{
+    @content;
+  }
+
+  @-moz-keyframes #{$name}{
+    @content;
+  }
+
+  @-ms-keyframes #{$name}{
+    @content;
+  }
+
+  @keyframes #{$name}{
+    @content;
+  }
+
+}
+
+.animated{
+  @include opacity(0);
+  @include single-transition(opacity,1000ms);
+}
+
+.animated-hinge{
+  @include animation-fill-mode(both);
+  @include animation-duration(2s);
+}
+
+@include keyframes(fadeIn){
+  0%{ @include opacity(0);}
+  100% {@include opacity(1);}
+}
+
+@include keyframes(bounceInDown){
+  0%{ 
+    @include opacity(0); 
+    @include translateY(-2000px);
+  }
+  60%{ 
+    @include opacity(1);
+    @include translateY(30px);
+  }
+  80%{ 
+    @include translateY(-10px);
+  }
+  100%{ 
+    @include translateY(0);  
+  }
+}
+
+.bounceInDown{
+  @include animation-name(bouceInDown); 
+}
+
+.animated.fadeIn{
+  @include opacity(1);
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+

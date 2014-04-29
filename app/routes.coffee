@@ -9,29 +9,29 @@ class AppRoute
     @setStatic()
   setBase: ->
     rtbl = @routeTables
-    rtbl.push(
+    rtbl.push
       method:'GET'
       path:'/about'
       config: @ctrs.base.about
-    )
+    
   setApp: ->
     rtbl = @routeTables
-    rtbl.push(
+    rtbl.push
       method:"GET"
       path:"/"
       handler:
         file:
-          path:"./client-app/dist/index.html"
-    )
+          path:"./pages/dist/index.html"
+    
   setStatic: ->
     rtbl = @routeTables
-    rtbl.push(
+    rtbl.push
       method:'GET'
       path:'/public/{path*}'
       handler:
         directory:
           path:'./public'
-    )
+    
 
 module.exports = exports = (server) ->
   approute = new AppRoute(server)

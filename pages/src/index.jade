@@ -1,0 +1,29 @@
+doctype html
+html(lang="en", ng-app="pp-acc-app")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    
+    title Pureprofile - Your participation pays!
+
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    
+    link(rel="stylesheet",href="/public/css/main.css")
+  body.ng-cloak
+    //if lt IE 8
+      p.chromeframe.
+        You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com/">upgrade your browser</a>
+        to improve your experience.
+    .main-root
+      include shared/_header
+      .container-fluid
+        .ng-view
+          
+      .root-footer
+
+    include shared/_footer
+
+    script(type="text/javascript",src="/public/scripts/libraries.js")
+    script(type="text/javascript",src="/public/scripts/app/pp-acc-app.js")
